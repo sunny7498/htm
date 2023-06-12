@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div className="App">
+    <div id="deeplink" >
+        Test Deeplink
+    </div>
+    <div id="share" >
+        Test share
+    </div>
+    <div id="copy" >
+        Test copy
+    </div>
+    <div id="close" >
+        Test close
+    </div>
+
+</div>
+<script>
+    document.getElementById('deeplink').addEventListener('click',(e) => {
+        window.open("zmah://zomato/com?action=deeplink&value=zomato-merchant://customer-issues")
+    })
+    document.getElementById('share').addEventListener('click',(e) => {
+        window.open("zmah://zomato/com?action=share&value=this is a share text")
+    })
+    document.getElementById('copy').addEventListener('click',(e) => {
+        window.open("zmah://zomato/com?action=copy_to_clipboard&value=copied to clipboard/????")
+    })
+    document.getElementById('close').addEventListener('click',(e) => {
+        window.open("zmah://zomato/com?action=close")
+
+    })
+
+
+
+</script>
+</body>
+</html>
