@@ -361,10 +361,10 @@
     <div id="close" class="ten">
         Test close
     </div>
-  <div id="prevent_screenshot" class="ten">
+  <div id="update_screen_capture_access" class="ten">
         Test prevent screenshot
     </div>
-    <div id="prevent_screenshot_false" class="ten">
+    <div id="update_screen_capture_access_false" class="ten">
         Test remove prevent screenshot
     </div>
 </div>
@@ -383,11 +383,11 @@
 
     })
 
- document.getElementById('prevent_screenshot').addEventListener('click',(e) => {
+ document.getElementById('update_screen_capture_access').addEventListener('click',(e) => {
         window.open("zmah://zomato/com?action=prevent_screen_capture&value=true")
 
     })
- document.getElementById('prevent_screenshot_false').addEventListener('click',(e) => {
+ document.getElementById('update_screen_capture_access_false').addEventListener('click',(e) => {
         window.open("zmah://zomato/com?action=prevent_screen_capture&value=false")
 
     })
