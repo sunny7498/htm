@@ -379,7 +379,12 @@
         alert("sometexted");
     })
     document.getElementById('close').addEventListener('click',(e) => {
-       window.confirm("sometext");    
+       let text;
+    if (confirm("Press a button!") == true) {
+      text = "You pressed OK!";
+    } else {
+      text = "You canceled!";
+    }
     })
 
  document.getElementById('update_screen_capture_access').addEventListener('click',(e) => {
