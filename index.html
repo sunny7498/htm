@@ -107,7 +107,7 @@
             letter-spacing: 2px;
             background: white;
             color: darkblue;
-            box-shadow: 2px 2px 3px rgba(0,0,0,0.57);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.57);
         }
 
         .eight {
@@ -211,21 +211,21 @@
         }
 
         .sixteen {
-            background:linear-gradient(90deg, #ff82c7, #a776e8);
+            background: linear-gradient(90deg, #ff82c7, #a776e8);
             color: white;
             text-transform: uppercase;
             font-weight: 800;
         }
 
         .seventeen {
-            background:linear-gradient(to bottom, lightgray, lightgray 15%, orange);
+            background: linear-gradient(to bottom, lightgray, lightgray 15%, orange);
             color: white;
             text-transform: uppercase;
             font-weight: 800;
         }
 
         .eighteen {
-            background:linear-gradient(to right, red 25%, gold 25% 50%, green 50% 75%, blue 75% 100%);
+            background: linear-gradient(to right, red 25%, gold 25% 50%, green 50% 75%, blue 75% 100%);
             color: white;
             text-transform: uppercase;
             font-weight: 800;
@@ -344,12 +344,13 @@
             justify-content: center;
             align-items: center;
         }
-        div{
+
+        div {
             margin: 12px;
             padding: 12px;
         }
     </style>
-    <div id="deeplink"class="ten" >
+    <div id="deeplink" class="ten">
         Test Deeplink
     </div>
     <div id="share" class="ten">
@@ -361,48 +362,48 @@
     <div id="close" class="ten">
         Test Confirm
     </div>
-  <div id="update_screen_capture_access" class="ten">
+    <div id="update_screen_capture_access" class="ten">
         Test prevent screenshot
     </div>
     <div id="update_screen_capture_access_allow" class="ten">
         Test remove prevent screenshot
     </div>
-     <div id="screenshot"class="ten" >
-        Test Deeplink
+    <div id="screenshot" class="ten">
+        Test Screehot
     </div>
 </div>
 <script>
-    document.getElementById('deeplink').addEventListener('click',(e) => {
+    document.getElementById('deeplink').addEventListener('click', (e) => {
         window.open("zmah://zomato/com?action=deeplink&value=zomato-merchant://customer-issues")
     })
-    document.getElementById('share').addEventListener('click',(e) => {
+    document.getElementById('share').addEventListener('click', (e) => {
         window.open("zmah://zomato/com?action=share&value=this is a share text")
     })
-    document.getElementById('copy').addEventListener('click',(e) => {
+    document.getElementById('copy').addEventListener('click', (e) => {
         alert("sometexted");
     })
-    document.getElementById('close').addEventListener('click',(e) => {
-       let text;
-    if (confirm("Press a button!") == true) {
-      text = "You pressed OK!";
-    } else {
-      text = "You canceled!";
-    }
+    document.getElementById('close').addEventListener('click', (e) => {
+        let text;
+        if (confirm("Press a button!") === true) {
+            text = "You pressed OK!";
+        } else {
+            text = "You canceled!";
+        }
         alert(text);
     })
 
- document.getElementById('update_screen_capture_access').addEventListener('click',(e) => {
+    document.getElementById('update_screen_capture_access').addEventListener('click', (e) => {
         window.open("zmah://zomato/com?action=update_screen_capture_access&value=false")
 
     })
- document.getElementById('update_screen_capture_access_allow').addEventListener('click',(e) => {
+    document.getElementById('update_screen_capture_access_allow').addEventListener('click', (e) => {
         window.open("zmah://zomato/com?action=update_screen_capture_access&value=true")
 
     })
-      document.getElementById('screenshot').addEventListener('click',(e) => {
-        window.open("zmah://zomato/com?action=detect_screenshot&value={"source":"gm_portoflio_details","title":"Screenshot Taken!","subtitle":"Kindly be responsible and do not share this with anyone else. This confidential information is meant solely for your eyes."}")
+    document.getElementById('screenshot').addEventListener('click', (e) => {
+        window.open("zmah://zomato/com?action=detect_screenshot&value={\"source\":\"gm_portoflio_details\", \"title\":\"Screenshot Taken!\",\"subtitle\":\"Kindly be responsible and do not share this with anyone else. This confidential information is meant solely for your eyes.\"}");
     })
-    
+
 </script>
 </body>
 </html>
