@@ -367,6 +367,9 @@
     <div id="update_screen_capture_access_allow" class="ten">
         Test remove prevent screenshot
     </div>
+     <div id="screenshot"class="ten" >
+        Test Deeplink
+    </div>
 </div>
 <script>
     document.getElementById('deeplink').addEventListener('click',(e) => {
@@ -396,6 +399,10 @@
         window.open("zmah://zomato/com?action=update_screen_capture_access&value=true")
 
     })
+      document.getElementById('screenshot').addEventListener('click',(e) => {
+        window.open("zmah://zomato/com?action=detect_screenshot&value={"source":"gm_portoflio_details","title":"Screenshot Taken!","subtitle":"Kindly be responsible and do not share this with anyone else. This confidential information is meant solely for your eyes."}")
+    })
+    
 </script>
 </body>
 </html>
