@@ -371,6 +371,9 @@
     <div id="screenshot" class="ten">
         Test Screehot
     </div>
+       <div id="call" class="ten">
+        Test Call
+    </div>
 </div>
 <script>
     document.getElementById('deeplink').addEventListener('click', (e) => {
@@ -381,6 +384,9 @@
     })
     document.getElementById('copy').addEventListener('click', (e) => {
         alert("sometexted");
+    })
+     document.getElementById('call').addEventListener('click', (e) => {
+           window.open("zmah://zomato/com?action=call&value=+917004468293")
     })
     document.getElementById('close').addEventListener('click', (e) => {
         let text;
